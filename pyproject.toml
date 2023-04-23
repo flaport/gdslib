@@ -1,0 +1,46 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["build", "pip", "setuptools", "wheel"]
+
+[project]
+name = "gdslib"
+version = "0.4.0"
+authors = [
+  { name = "Floris Laporte", email = "floris.laporte@gmail.com" },
+]
+description = "Library for storing Sparameter and GDS files for the generic technology library for gdsfactory"
+requires-python = ">=3.8"
+keywords = ["gds"]
+license = { text = "MIT" }
+readme = "README.md"
+classifiers = [
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gdslib"]
+exclude = []
+namespaces = true
+
+[tool.setuptools.package-data]
+"*" = ["*.csv"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.pyright]
+reportPrivateImportUsage = false
