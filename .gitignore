@@ -1,6 +1,10 @@
 __pycache__
+*.egg-info
 .terraform*
 .terraform
 .env
 *.pyc
 *.gds
+build
+dist
+bdist*
