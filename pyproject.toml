@@ -26,7 +26,12 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
 ]
-dependencies = []
+dependencies = [
+  "gdstk",
+  "python-dotenv",
+  "PyMySQL",
+  "boto3",
+]
 
 [tool.setuptools.packages.find]
 where = ["."]
