@@ -31,6 +31,8 @@ dependencies = [
   "python-dotenv",
   "PyMySQL",
   "boto3",
+  "fastapi",
+  "python-multipart",
 ]
 
 [tool.setuptools.packages.find]
